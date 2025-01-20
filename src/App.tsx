@@ -37,7 +37,7 @@ function App() {
             <Terminal className="h-8 w-8 text-emerald-500" />
             <span className="text-xl font-bold terminal-header">Skill404</span>
           </div>
-          <a href="https://github.com" 
+          <a href="https://github.com/404skill" 
              className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 border border-emerald-500/20 hover:border-emerald-500/40 transition-all backdrop-blur-sm">
             <Github className="h-5 w-5" />
             <span>Star on GitHub</span>
