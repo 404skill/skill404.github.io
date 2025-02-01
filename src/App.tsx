@@ -240,6 +240,67 @@ function App() {
           </form>
         </section>
       </main>
+
+      {/* Footer */}
+      <footer className="mt-24 border-t border-emerald-500/20 bg-gray-900/50">
+        <div className="container mx-auto px-6 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Brand Column */}
+            <div className="space-y-4">
+              <div className="flex items-center space-x-2">
+                <Terminal className="h-6 w-6 text-emerald-500" />
+                <span className="text-lg font-bold terminal-header">Skill404</span>
+              </div>
+              <p className="text-gray-400 text-sm">
+                Level up your software engineering skills with real-world projects and expert mentorship.
+              </p>
+            </div>
+
+            {/* Resources */}
+            {/* <div>
+              <h3 className="text-lg font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-emerald-500 transition-colors">Documentation</a></li>
+                <li><a href="#" className="hover:text-emerald-500 transition-colors">Challenges</a></li>
+                <li><a href="#" className="hover:text-emerald-500 transition-colors">Blog</a></li>
+              </ul>
+            </div> */}
+
+            {/* Company */}
+            {/* <div>
+              <h3 className="text-lg font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-emerald-500 transition-colors">About Us</a></li>
+                <li><a href="#" className="hover:text-emerald-500 transition-colors">Careers</a></li>
+                <li><a href="#" className="hover:text-emerald-500 transition-colors">Contact</a></li>
+              </ul>
+            </div> */}
+
+            {/* Legal */}
+            {/* <div>
+              <h3 className="text-lg font-semibold mb-4">Legal</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-emerald-500 transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-emerald-500 transition-colors">Terms of Service</a></li>
+                <li><a href="#" className="hover:text-emerald-500 transition-colors">Cookie Policy</a></li>
+              </ul>
+            </div> */}
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="mt-12 pt-8 border-t border-emerald-500/20 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              © {new Date().getFullYear()} Skill404. All rights reserved.
+            </p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="text-gray-400 hover:text-emerald-500 transition-colors">
+                <Github className="h-5 w-5" />
+              </a>
+              {/* Add more social media icons as needed */}
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
