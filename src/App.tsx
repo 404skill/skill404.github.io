@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Users, MessageSquareCode, ChevronRight, Github, Terminal } from 'lucide-react';
+import { ChevronRight, Github, Terminal, Sparkles, CircleDollarSign, Users, MessageSquareText, Coins, Zap, GraduationCap } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 import { supabase } from './lib/supabase';
 
@@ -99,21 +99,7 @@ function App() {
             {/* Card 1 */}
             <div className="feature-card p-6 bg-gray-800/50 rounded-lg border border-emerald-500/20">
               <div className="flex items-center mb-2">
-                {/* Example Lucide icon, e.g. Sparkles */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-emerald-400 mr-3"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 3v2m0 8v8m0-8H4m8 0h8"
-                  />
-                </svg>
+                <Sparkles className="h-6 w-6 text-emerald-400 mr-3" />
                 <h3 className="text-xl font-semibold">Authentic Experience</h3>
               </div>
               <p className="text-gray-300">
@@ -122,29 +108,10 @@ function App() {
               </p>
             </div>
 
-            {/* Card 2 */}
+            {/* Card 2 - Free to Start */}
             <div className="feature-card p-6 bg-gray-800/50 rounded-lg border border-emerald-500/20">
               <div className="flex items-center mb-2">
-                {/* Example icon for "Free to Start" */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-emerald-400 mr-3"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 1v2m8.485 1.757L18.364 6m2.121 12.485L18.364 18M4.636 6 3.515 4.757M3.515 19.243 4.636 18"
-                  />
-                </svg>
+                <Coins className="h-6 w-6 text-emerald-400 mr-3" />
                 <h3 className="text-xl font-semibold">Free to Start</h3>
               </div>
               <p className="text-gray-300">
@@ -153,50 +120,22 @@ function App() {
               </p>
             </div>
 
-            {/* Card 3 */}
+            {/* Card 3 - Instant Feedback */}
             <div className="feature-card p-6 bg-gray-800/50 rounded-lg border border-emerald-500/20">
               <div className="flex items-center mb-2">
-                {/* Example icon for "Instant Feedback" */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-emerald-400 mr-3"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13 16h-1v-4h-1m2 4v-4m-6 1h2m10.5 4.5a9 9 0 11-8.18-8.178"
-                  />
-                </svg>
+                <Zap className="h-6 w-6 text-emerald-400 mr-3" />
                 <h3 className="text-xl font-semibold">Instant Feedback</h3>
               </div>
               <p className="text-gray-300">
-                Each code push triggers automated tests, so you’ll know right away
-                whether you’re on the right track.
+                Each code push triggers automated tests, so you'll know right away
+                whether you're on the right track.
               </p>
             </div>
 
-            {/* Card 4 */}
+            {/* Card 4 - Expert Guidance */}
             <div className="feature-card p-6 bg-gray-800/50 rounded-lg border border-emerald-500/20">
               <div className="flex items-center mb-2">
-                {/* Example icon for "Expert Guidance" */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-emerald-400 mr-3"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 8h14M5 16h14M11 12h2m-1 0v10"
-                  />
-                </svg>
+                <GraduationCap className="h-6 w-6 text-emerald-400 mr-3" />
                 <h3 className="text-xl font-semibold">Expert Guidance</h3>
               </div>
               <p className="text-gray-300">
@@ -222,27 +161,7 @@ function App() {
       
       {/* 1. Flexible Pricing */}
       <div className="flex items-start gap-4">
-        {/* Enlarge icon to h-10 w-10 */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-emerald-400 mt-1 flex-shrink-0"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path 
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z" 
-          />
-          <path 
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 1v2m8.485 1.757L18.364 6m2.121 12.485L18.364 18M4.636 6 3.515 4.757M3.515 19.243 4.636 18" 
-          />
-        </svg>
+        <CircleDollarSign className="h-10 w-10 text-emerald-400 mt-1 flex-shrink-0" />
         <div>
           <h3 className="text-xl font-semibold text-gray-100">Flexible Pricing</h3>
           <p className="text-gray-300 mt-1">
@@ -254,21 +173,12 @@ function App() {
 
       {/* 2. Expert Engineers */}
       <div className="flex items-start gap-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-emerald-400 mt-1 flex-shrink-0"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-3-3h-2.18" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17H4a3 3 0 01-3-3V6a3 3 0 013-3h14a3 3 0 013 3v8" />
-        </svg>
+        <Users className="h-10 w-10 text-emerald-400 mt-1 flex-shrink-0" />
         <div>
           <h3 className="text-xl font-semibold text-gray-100">Expert Engineers</h3>
           <p className="text-gray-300 mt-1">
             Our mentors have real-world experience in backend, DevOps,
-            and more. They’ve tackled the same challenges you’re facing—learn 
+            and more. They've tackled the same challenges you're facing—learn 
             directly from their expertise.
           </p>
         </div>
@@ -276,20 +186,7 @@ function App() {
 
       {/* 3. Actionable Feedback */}
       <div className="flex items-start gap-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-emerald-400 mt-1 flex-shrink-0"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path 
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2" 
-            d="M13 16h-1v-4h-1m2 4v-4m-6 1h2m-2 4h10m2 0H9m4-8h2m-6-4h6" 
-          />
-        </svg>
+        <MessageSquareText className="h-10 w-10 text-emerald-400 mt-1 flex-shrink-0" />
         <div>
           <h3 className="text-xl font-semibold text-gray-100">Actionable Feedback</h3>
           <p className="text-gray-300 mt-1">
